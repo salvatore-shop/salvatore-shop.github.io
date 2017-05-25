@@ -1,4 +1,4 @@
-jQuery(function($){
+$function(){
 	 $("#photo img").bind("load",function(){
 	 	var ImgHeight = $(this).height();
 	 	$('#photo').css('height',ImgHeight);
