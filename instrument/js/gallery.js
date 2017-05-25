@@ -4,7 +4,7 @@ $function(){
 	// 	$('#photo').css('height',ImgHeight);
 	// });
 	
-	$('#navi a').click(function(){
+	$('#photo a').click(function(){
 		if($(this).hasClass('over') == false){
 			$('#navi a').removeClass('over');
 			$(this).addClass('over');
