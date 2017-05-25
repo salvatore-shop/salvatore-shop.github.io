@@ -121,10 +121,10 @@ vertical-align: middle;/*IE7*/
 		max-height:350px;
 	}
 	/*各商品詳細ページ 画像サムネイル*/
-	#photo{
+	#navi{
 		overflow:scroll;
 	}
-	#photo ul{
+	#navi ul{
 		max-width:100%;
 	}
 }
