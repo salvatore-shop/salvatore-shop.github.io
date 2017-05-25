@@ -6,7 +6,7 @@ $function(){
 	
 	$('#photo a').click(function(){
 		if($(this).hasClass('over') == false){
-			$('#navi a').removeClass('over');
+			$('#photo a').removeClass('over');
 			$(this).addClass('over');
 			$('#photo img').hide().attr('src',$(this).attr('href')).fadeIn();
 		};
