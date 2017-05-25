@@ -1,15 +1,17 @@
 $function(){
-	// $("#photo img").bind("load",function(){
-	// 	var ImgHeight = $(this).height();
-	// 	$('#photo').css('height',ImgHeight);
-	// });
+	 $("#photo img").bind("load",function(){
+	 	var ImgHeight = $(this).height();
+	 	$('#photo').css('height',ImgHeight);
+	 });
 	
-	$('#photo a').click(function(){
+	$('#navi a').click(function(){
 		if($(this).hasClass('over') == false){
-			$('#photo a').removeClass('over');
+			$('#navi a').removeClass('over');
 			$(this).addClass('over');
 			$('#photo img').hide().attr('src',$(this).attr('href')).fadeIn();
 		};
 		return false;
 	}).filter(':eq(0)').click();
 };
+
+//http://25egg.com/sample/gallery/
