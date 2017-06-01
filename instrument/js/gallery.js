@@ -1,18 +1,33 @@
-//$function(){
 jQuery(function($){
-	 $("#photo img").bind("load",function(){
-	 	var ImgHeight = $(this).height();
-	 	$('#photo').css('height',ImgHeight);
-	 });
+	$(".photo img").bind("load",function(){
+		var ImgHeight = $(this).height();
+		$('.photo').css('height',ImgHeight);
+	});
 	
-	$('#navi a').click(function(){
+	$('.nav a').click(function(){
 		if($(this).hasClass('over') == false){
-			$('#navi a').removeClass('over');
+			$('.nav a').removeClass('over');
 			$(this).addClass('over');
-			$('#photo img').hide().attr('src',$(this).attr('href')).fadeIn();
+			$('.photo img').hide().attr('src',$(this).attr('href')).fadeIn();
 		};
 		return false;
 	}).filter(':eq(0)').click();
-};
+});
+
+//$function(){
+//	 $("#photo img").bind("load",function(){
+//	 	var ImgHeight = $(this).height();
+//	 	$('#photo').css('height',ImgHeight);
+//	 });
+//	
+//	$('#navi a').click(function(){
+//		if($(this).hasClass('over') == false){
+//			$('#navi a').removeClass('over');
+//			$(this).addClass('over');
+//			$('#photo img').hide().attr('src',$(this).attr('href')).fadeIn();
+//		};
+//		return false;
+//	}).filter(':eq(0)').click();
+//};
 
 //http://25egg.com/sample/gallery/
